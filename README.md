@@ -13,9 +13,9 @@ It was made to display my personal projects.
 
 ## Mobile demo:
 
-![Preview GIF:](https://github.com/samuelfuchs/portfolio/blob/master/samuelfuchsdotcom_mobile_preview.gif)
+![Preview GIF:](https://github.com/Blessing-Kola/portfolio/blob/master/BlessingOloyede-MobileView.gif) 
 
 ## Desktop demo:
 
-![Preview GIF:](https://github.com/samuelfuchs/portfolio/blob/master/samuelfuchsdotcom_desktop_preview.gif)
+![Preview GIF:](https://github.com/Blessing-Kola/portfolio/blob/master/BlessingOloyede-WindowView.gif)
 
