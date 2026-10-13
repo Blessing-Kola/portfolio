@@ -1,0 +1,370 @@
+.portfolio-gallery__container {
+  max-width: 1000px;
+}
+
+.portfolio-gallery__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 0 auto 1.25rem;
+}
+
+.portfolio-gallery__filter {
+  border: 1px solid var(--first-color-lighter);
+  border-radius: 2rem;
+  padding: 0.6rem 0.95rem;
+  background: var(--container-color);
+  color: var(--text-color);
+  font: inherit;
+  font-size: var(--small-font-size);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.portfolio-gallery__filter:hover {
+  border-color: var(--first-color);
+  color: var(--first-color);
+  transform: translateY(-2px);
+}
+
+.portfolio-gallery__filter.is-active {
+  border-color: var(--first-color);
+  background: var(--first-color);
+  color: #fff;
+}
+
+.portfolio-gallery__filter:focus-visible,
+.portfolio-gallery__details-button:focus-visible,
+.portfolio-gallery__card-live:focus-visible,
+.portfolio-gallery__dialog-close:focus-visible,
+.portfolio-gallery__link:focus-visible {
+  outline: 3px solid var(--first-color-lighter);
+  outline-offset: 3px;
+}
+
+.portfolio-gallery__status {
+  min-height: 1.4em;
+  margin-bottom: 1rem;
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.portfolio-gallery__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.portfolio-gallery__card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+  border-radius: 0.85rem;
+  background: var(--container-color);
+  box-shadow: 0 4px 18px rgba(17, 24, 39, 0.07);
+  animation: portfolio-gallery-enter 0.45s both;
+  animation-delay: calc(var(--gallery-card-index, 0) * 70ms);
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.portfolio-gallery__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.13);
+}
+
+.portfolio-gallery__image-wrap,
+.portfolio-gallery__dialog-image-wrap {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, var(--first-color-lighter), transparent 45%),
+    var(--input-color);
+}
+
+.portfolio-gallery__image-wrap {
+  aspect-ratio: 16 / 10;
+}
+
+.portfolio-gallery__image-wrap::after,
+.portfolio-gallery__dialog-image-wrap::after {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  content: "Project preview unavailable";
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.portfolio-gallery__image-wrap.is-image-missing::after,
+.portfolio-gallery__dialog-image-wrap.is-image-missing::after {
+  display: flex;
+}
+
+.portfolio-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.portfolio-gallery__card:hover .portfolio-gallery__image {
+  transform: scale(1.04);
+}
+
+.portfolio-gallery__card-body {
+  display: flex;
+  min-height: 18rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.15rem;
+}
+
+.portfolio-gallery__eyebrow {
+  margin-bottom: 0.45rem;
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.035em;
+}
+
+.portfolio-gallery__card-title,
+.portfolio-gallery__dialog-title {
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+}
+
+.portfolio-gallery__card-title {
+  margin-bottom: 0.55rem;
+}
+
+.portfolio-gallery__card-description,
+.portfolio-gallery__dialog-description {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  line-height: 1.7;
+}
+
+.portfolio-gallery__card-description {
+  margin-bottom: 1rem;
+}
+
+.portfolio-gallery__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-gallery__tag {
+  border-radius: 0.35rem;
+  padding: 0.32rem 0.55rem;
+  background: var(--input-color);
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+}
+
+.portfolio-gallery__card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: auto;
+  padding-top: 1.2rem;
+}
+
+.portfolio-gallery__details-button,
+.portfolio-gallery__card-live,
+.portfolio-gallery__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 0;
+  color: var(--first-color);
+  font: inherit;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.portfolio-gallery__details-button {
+  border-radius: 0.45rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--input-color);
+}
+
+.portfolio-gallery__details-button:hover {
+  background: var(--first-color-lighter);
+}
+
+.portfolio-gallery__card-live:hover,
+.portfolio-gallery__link:hover {
+  color: var(--first-color-alt);
+  transform: translateY(-1px);
+}
+
+.portfolio-gallery__dialog {
+  width: min(94vw, 760px);
+  max-width: none;
+  max-height: min(88vh, 850px);
+  margin: auto;
+  overflow: auto;
+  border: 1px solid color-mix(in srgb, var(--text-color) 15%, transparent);
+  border-radius: 1rem;
+  padding: 0;
+  background: var(--container-color);
+  color: var(--text-color);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-gallery__dialog::backdrop {
+  background: rgba(12, 16, 30, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.portfolio-gallery__dialog-content {
+  position: relative;
+}
+
+.portfolio-gallery__dialog-close {
+  position: absolute;
+  z-index: 1;
+  top: 0.8rem;
+  right: 0.8rem;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--container-color);
+  color: var(--title-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.portfolio-gallery__dialog-image-wrap {
+  aspect-ratio: 16 / 9;
+}
+
+.portfolio-gallery__dialog-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-gallery__dialog-image[hidden],
+.portfolio-gallery__link[hidden] {
+  display: none;
+}
+
+.portfolio-gallery__dialog-body {
+  padding: 1.4rem;
+}
+
+.portfolio-gallery__dialog-title {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-gallery__dialog-description {
+  margin-bottom: 1.25rem;
+}
+
+.portfolio-gallery__technology-title {
+  margin-bottom: 0.65rem;
+  color: var(--title-color);
+  font-size: var(--normal-font-size);
+}
+
+.portfolio-gallery__dialog-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.portfolio-gallery__link {
+  min-height: 2.7rem;
+  border: 1px solid var(--first-color);
+  border-radius: 0.45rem;
+  padding: 0.65rem 0.85rem;
+}
+
+.portfolio-gallery__link--primary {
+  background: var(--first-color);
+  color: #fff;
+}
+
+.portfolio-gallery__link--primary:hover {
+  background: var(--first-color-alt);
+  color: #fff;
+}
+
+.portfolio-gallery-modal-open {
+  overflow: hidden;
+}
+
+@keyframes portfolio-gallery-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .portfolio-gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .portfolio-gallery__card-body {
+    min-height: 20rem;
+    padding: 1.35rem;
+  }
+
+  .portfolio-gallery__dialog-body {
+    padding: 1.75rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .portfolio-gallery__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-gallery__card,
+  .portfolio-gallery__filter,
+  .portfolio-gallery__image,
+  .portfolio-gallery__details-button,
+  .portfolio-gallery__card-live,
+  .portfolio-gallery__link {
+    animation: none;
+    transition: none;
+  }
+}

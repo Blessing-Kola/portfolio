@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio-gallery.css" />
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" >
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" >
@@ -594,6 +595,138 @@
           </div>
         </div>
       </section>
+
+      <!-- portfolio gallery -->
+      <section class="portfolio-gallery section" id="portfolio">
+        <h2 class="section__title">My Projects</h2>
+        <span class="section__subtitle">
+          A selection of websites and applications I have worked on
+        </span>
+
+        <div class="portfolio-gallery__container container">
+          <div
+            class="portfolio-gallery__filters"
+            role="group"
+            aria-label="Filter projects by category"
+          >
+            <button
+              class="portfolio-gallery__filter is-active"
+              type="button"
+              data-gallery-filter="all"
+              aria-pressed="true"
+            >
+              All Projects
+            </button>
+            <button
+              class="portfolio-gallery__filter"
+              type="button"
+              data-gallery-filter="web"
+              aria-pressed="false"
+            >
+              Web Development
+            </button>
+            <button
+              class="portfolio-gallery__filter"
+              type="button"
+              data-gallery-filter="uiux"
+              aria-pressed="false"
+            >
+              UI/UX Design
+            </button>
+            <button
+              class="portfolio-gallery__filter"
+              type="button"
+              data-gallery-filter="javascript"
+              aria-pressed="false"
+            >
+              JavaScript Projects
+            </button>
+            <button
+              class="portfolio-gallery__filter"
+              type="button"
+              data-gallery-filter="other"
+              aria-pressed="false"
+            >
+              Other Projects
+            </button>
+          </div>
+
+          <p
+            class="portfolio-gallery__status"
+            data-gallery-status
+            aria-live="polite"
+          ></p>
+          <div class="portfolio-gallery__grid" data-gallery-grid></div>
+        </div>
+
+        <dialog
+          class="portfolio-gallery__dialog"
+          data-gallery-dialog
+          aria-labelledby="portfolio-gallery-dialog-title"
+        >
+          <div class="portfolio-gallery__dialog-content">
+            <button
+              class="portfolio-gallery__dialog-close"
+              type="button"
+              data-gallery-close
+              aria-label="Close project details"
+            >
+              <i class="uil uil-times" aria-hidden="true"></i>
+            </button>
+            <div class="portfolio-gallery__dialog-image-wrap">
+              <img
+                class="portfolio-gallery__dialog-image"
+                data-gallery-dialog-image
+                alt=""
+              />
+            </div>
+            <div class="portfolio-gallery__dialog-body">
+              <p
+                class="portfolio-gallery__eyebrow"
+                data-gallery-dialog-category
+              ></p>
+              <h2
+                class="portfolio-gallery__dialog-title"
+                id="portfolio-gallery-dialog-title"
+                data-gallery-dialog-title
+              ></h2>
+              <p
+                class="portfolio-gallery__dialog-description"
+                data-gallery-dialog-description
+              ></p>
+              <h3 class="portfolio-gallery__technology-title">
+                Technologies used
+              </h3>
+              <ul
+                class="portfolio-gallery__tags"
+                data-gallery-dialog-tags
+                aria-label="Technologies used"
+              ></ul>
+              <div class="portfolio-gallery__dialog-links">
+                <a
+                  class="portfolio-gallery__link portfolio-gallery__link--primary"
+                  data-gallery-live-link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View live project
+                  <i class="uil uil-arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <a
+                  class="portfolio-gallery__link"
+                  data-gallery-source-link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View source code
+                  <i class="uil uil-github-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </section>
+
       <!-- mini cta -->
       <section class="project section">
         <div class="project__bg">
@@ -851,5 +984,6 @@
 
     <!-- main js -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/portfolio-gallery.js"></script>
   </body>
 </html>

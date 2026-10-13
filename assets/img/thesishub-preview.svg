@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" rx="22" fill="#F6F7FB"/>
+  <rect x="22" y="22" width="596" height="356" rx="16" fill="#FFFFFF" stroke="#E4E7EF"/>
+  <path d="M38 22h564a16 16 0 0 1 16 16v44H22V38a16 16 0 0 1 16-16Z" fill="#FFFFFF"/>
+  <path d="M22 82h596" stroke="#E9EBF1"/>
+  <rect x="42" y="41" width="28" height="28" rx="8" fill="#563DF5"/>
+  <path d="M50 48h12v14H50z" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M56 49v12" stroke="#FFFFFF" stroke-width="1.4"/>
+  <text x="80" y="61" fill="#171923" font-family="Arial, sans-serif" font-size="17" font-weight="700">ThesisHub</text>
+  <rect x="474" y="40" width="58" height="30" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="487" y="59" fill="#404252" font-family="Arial, sans-serif" font-size="11" font-weight="600">Login</text>
+  <rect x="540" y="40" width="58" height="30" rx="8" fill="#563DF5"/>
+  <text x="549" y="59" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" font-weight="700">Register</text>
+  <rect x="42" y="106" width="556" height="238" rx="14" fill="#FCFCFE" stroke="#ECEEF4"/>
+  <rect x="62" y="126" width="174" height="23" rx="11.5" fill="#F0EDFF"/>
+  <text x="74" y="142" fill="#4F37D5" font-family="Arial, sans-serif" font-size="10" font-weight="700">FINAL YEAR PROJECT MANAGEMENT</text>
+  <text x="62" y="184" fill="#171923" font-family="Arial, sans-serif" font-size="24" font-weight="700">From proposal to defense</text>
+  <text x="62" y="207" fill="#626779" font-family="Arial, sans-serif" font-size="12">One workspace for students, supervisors, and coordinators.</text>
+  <rect x="62" y="229" width="112" height="34" rx="8" fill="#563DF5"/>
+  <text x="77" y="250" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" font-weight="700">Manage projects</text>
+  <rect x="185" y="229" width="112" height="34" rx="8" fill="#FFFFFF" stroke="#E1E3EA"/>
+  <text x="206" y="250" fill="#37394A" font-family="Arial, sans-serif" font-size="11" font-weight="600">Learn more</text>
+  <rect x="62" y="285" width="154" height="39" rx="8" fill="#FFFFFF" stroke="#ECEEF4"/>
+  <circle cx="79" cy="304" r="8" fill="#EDEAFF"/>
+  <path d="m75.5 304 2.3 2.3 4.7-5" stroke="#563DF5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="301" fill="#363849" font-family="Arial, sans-serif" font-size="10" font-weight="700">Proposal tracking</text>
+  <text x="94" y="314" fill="#86899A" font-family="Arial, sans-serif" font-size="9">Review and approvals</text>
+  <rect x="228" y="285" width="154" height="39" rx="8" fill="#FFFFFF" stroke="#ECEEF4"/>
+  <circle cx="245" cy="304" r="8" fill="#E8F7F0"/>
+  <path d="m241.5 304 2.3 2.3 4.7-5" stroke="#27A56A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="260" y="301" fill="#363849" font-family="Arial, sans-serif" font-size="10" font-weight="700">Chapter reviews</text>
+  <text x="260" y="314" fill="#86899A" font-family="Arial, sans-serif" font-size="9">Feedback and progress</text>
+  <rect x="394" y="126" width="180" height="198" rx="12" fill="#F5F3FF"/>
+  <text x="412" y="151" fill="#29263D" font-family="Arial, sans-serif" font-size="12" font-weight="700">Project timeline</text>
+  <text x="412" y="168" fill="#88869A" font-family="Arial, sans-serif" font-size="9">Keep every milestone on track</text>
+  <path d="M428 193v101" stroke="#D8D2FF" stroke-width="2"/>
+  <circle cx="428" cy="200" r="7" fill="#563DF5"/>
+  <circle cx="428" cy="232" r="7" fill="#765FF7"/>
+  <circle cx="428" cy="264" r="7" fill="#A99BFA"/>
+  <circle cx="428" cy="294" r="7" fill="#D2CBFC"/>
+  <text x="445" y="204" fill="#373549" font-family="Arial, sans-serif" font-size="10" font-weight="700">Proposal</text>
+  <text x="445" y="217" fill="#89879A" font-family="Arial, sans-serif" font-size="9">Submit for approval</text>
+  <text x="445" y="236" fill="#373549" font-family="Arial, sans-serif" font-size="10" font-weight="700">Chapters</text>
+  <text x="445" y="249" fill="#89879A" font-family="Arial, sans-serif" font-size="9">Review and feedback</text>
+  <text x="445" y="268" fill="#373549" font-family="Arial, sans-serif" font-size="10" font-weight="700">Meetings</text>
+  <text x="445" y="281" fill="#89879A" font-family="Arial, sans-serif" font-size="9">Schedule check-ins</text>
+  <text x="445" y="298" fill="#373549" font-family="Arial, sans-serif" font-size="10" font-weight="700">Defense</text>
+  <text x="445" y="311" fill="#89879A" font-family="Arial, sans-serif" font-size="9">Prepare for evaluation</text>
+</svg>
