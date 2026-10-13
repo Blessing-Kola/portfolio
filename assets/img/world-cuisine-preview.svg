@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" fill="none">
+  <defs>
+    <linearGradient id="background" x1="50" y1="30" x2="586" y2="368" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100D1E"/>
+      <stop offset="1" stop-color="#07151A"/>
+    </linearGradient>
+    <linearGradient id="heading" x1="211" y1="120" x2="422" y2="157" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A98BFF"/>
+      <stop offset="1" stop-color="#5EC6F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="22" fill="url(#background)"/>
+  <circle cx="73" cy="68" r="33" fill="#201532" opacity=".52"/>
+  <circle cx="568" cy="94" r="40" fill="#122927" opacity=".7"/>
+  <circle cx="104" cy="294" r="47" fill="#142636" opacity=".55"/>
+  <circle cx="558" cy="305" r="35" fill="#28203B" opacity=".6"/>
+  <text x="77" y="83" fill="#F6A75D" font-family="Arial, sans-serif" font-size="27" opacity=".55">🍕</text>
+  <text x="536" y="110" fill="#F6D773" font-family="Arial, sans-serif" font-size="28" opacity=".65">🍋</text>
+  <text x="83" y="306" fill="#F4B27C" font-family="Arial, sans-serif" font-size="27" opacity=".6">🍜</text>
+  <text x="544" y="314" fill="#9BE3C3" font-family="Arial, sans-serif" font-size="25" opacity=".6">🥗</text>
+  <rect x="219" y="48" width="202" height="35" rx="17.5" fill="#211735" stroke="#49326C"/>
+  <circle cx="239" cy="65.5" r="4" fill="#A15CFF"/>
+  <text x="252" y="70" fill="#D5C6FF" font-family="Arial, sans-serif" font-size="13" font-weight="600">64 Recipes from 12 Cuisines</text>
+  <text x="320" y="137" fill="url(#heading)" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">World Cuisine</text>
+  <text x="320" y="174" fill="#F6F4FB" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Recipe Explorer</text>
+  <text x="320" y="216" fill="#A9A7B8" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">Discover authentic recipes from around the globe.</text>
+  <text x="320" y="241" fill="#A9A7B8" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">Search by name, cuisine, ingredients, or keywords.</text>
+  <rect x="39" y="279" width="562" height="62" rx="16" fill="#171522" stroke="#393446"/>
+  <circle cx="68" cy="309" r="8" stroke="#9B97AA" stroke-width="2"/>
+  <path d="m74 315 6 6" stroke="#9B97AA" stroke-width="2" stroke-linecap="round"/>
+  <text x="98" y="314" fill="#898596" font-family="Arial, sans-serif" font-size="15">Search recipes, ingredients, cuisines...</text>
+</svg>

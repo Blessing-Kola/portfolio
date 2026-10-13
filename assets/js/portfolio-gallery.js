@@ -1,18 +1,19 @@
 const portfolioProjects = [
   {
-    title: 'Omnifood',
+    title: 'World Cuisine Recipe Explorer',
     description:
-      'A responsive meal-delivery landing page concept, presenting the service, menu, customer stories, and subscription options in a clear, polished layout.',
-    image: 'assets/img/portfolio0.jpg',
-    imageAlt: 'Omnifood meal-delivery landing page displayed on desktop and mobile',
-    categories: ['web', 'uiux'],
-    categoryLabel: 'Web Development · UI/UX Design',
+      'A responsive recipe discovery experience featuring 64 recipes from 12 cuisines. Visitors can search by recipe name, cuisine, ingredients, or keywords to find dishes from around the world.',
+    image: 'assets/img/world-cuisine-preview.svg',
+    imageAlt: 'World Cuisine Recipe Explorer website displayed on desktop and mobile',
+    categories: ['web', 'javascript'],
+    categoryLabel: 'Web Development · JavaScript Project',
     technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://world-cuisine-puce.vercel.app/',
   },
   {
     title: 'Horus Moving',
     description:
-      'A responsive website for Horus Moving, introducing the moving service with a prominent brand presentation and contact options.',
+      'A responsive company website for Horus Moving, presenting the brand and its moving services in a clear, approachable format. The layout adapts to desktop and mobile screens, making key information and contact options easy to find.',
     image: 'assets/img/portfolio1.jpg',
     imageAlt: 'Horus Moving website displayed on desktop and mobile',
     categories: ['web'],
@@ -23,7 +24,7 @@ const portfolioProjects = [
   {
     title: 'ThesisHub',
     description:
-      'A frontend workspace for managing final-year projects from proposal to defense. Students can follow submissions, supervisors can review chapters and provide feedback, and coordinators can oversee approvals, schedules, and evaluations.',
+      'A frontend workspace designed to coordinate final-year projects from proposal through defense. Students can track submissions, supervisors can review chapters and share feedback, and course coordinators can manage approvals, schedules, and evaluations.',
     image: 'assets/img/thesishub-preview.svg',
     imageAlt:
       'Illustrated ThesisHub project-management dashboard preview showing academic project stages',
@@ -35,7 +36,7 @@ const portfolioProjects = [
   {
     title: 'JavaScript Task Manager',
     description:
-      'A task-management interface concept with a focused JavaScript workflow for organizing and completing tasks.',
+      'A JavaScript task-management project that demonstrates a simple workflow for organizing tasks and tracking what needs to be done. Its focused interface keeps the task list and actions easy to scan.',
     image: 'assets/img/portfolio2.jpg',
     imageAlt: 'JavaScript task-management project illustration',
     categories: ['javascript'],
@@ -45,7 +46,7 @@ const portfolioProjects = [
   {
     title: 'React Shopping Cart',
     description:
-      'An e-commerce application concept centered on a product cart and a responsive shopping experience.',
+      'A React and Redux e-commerce project focused on the shopping-cart experience. It showcases a responsive storefront interface and the use of shared application state to support cart interactions.',
     image: 'assets/img/portfolio3.jpg',
     imageAlt: 'React shopping-cart application illustration',
     categories: ['web', 'other'],
